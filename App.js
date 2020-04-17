@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     alignSelf:"center",
     height:40,
     width:300,
-    borderRadius:10,
+    borderRadius:30,
     marginVertical:50,
     backgroundColor:'rgb(39,180,228)'
   },
