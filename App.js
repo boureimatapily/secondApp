@@ -26,13 +26,14 @@ function App() {
             <TextInput defaultValue="Ibrahim"  style={styles.underline}/>
             <Text style={[styles.itemSpace,styles.textwithcolor]}>Emergency Contact</Text>
             <TextInput defaultValue="+233572718508" style={styles.underline}/>
+
+            <TouchableOpacity style={styles.imagePhoneButton}>
+            <Image source={phone} style={styles.imageEditPhone} />
+            </TouchableOpacity>
         </View>
         <View>
           <TouchableOpacity style={styles.button}>
               <Text style={styles.buttonText}>UPDATE PROFILE</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-          <Image source={phone} style={styles.imageEditPhone} />
           </TouchableOpacity>
         </View>
 
@@ -110,12 +111,21 @@ const styles = StyleSheet.create({
   itemSpace:{
     marginTop:20
   },
-  imageEditPhone:{
+  imagePhoneButton:{
+    
+    width:40,
+    height:40,
+    borderRadius:75,
     position:"absolute",
-    top:200,
-    right:100,
-    width:50,
-    height:50,
+    top:245,
+    left:230,
+  },
+  imageEditPhone:{
+    width:20,
+    height:20,
+    position:"absolute",
+    top:5,
+    left:10,
   },
 });
 
